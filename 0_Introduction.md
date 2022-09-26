@@ -1,4 +1,4 @@
-# Apache Nifi Workshop
+# Introduction à Apache Nifi Workshop
 
 Le but de ce TP est de construire une pipeline Big Data avec Apache Nifi, l'agent de messages Kafka et MongoDB à partir des données Alpha Vantage.
 
