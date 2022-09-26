@@ -1,5 +1,5 @@
 # APACHE NIFI 1.17.0:
-- se rendre dans [la page de télécchargement de NiFi](https://nifi.apache.org/download.html)
+- se rendre dans [la page de téléchargement de NiFi](https://nifi.apache.org/download.html)
 - sources > Binaries >  copier  le premier lien apparu dans la page, celui-ci ressemble à https://dlcdn.apache.org/nifi/1.17.0/nifi-1.17.0-bin.zip
 - télécharger le fichier zip : 
 ```
