@@ -17,6 +17,8 @@
     ![image](https://user-images.githubusercontent.com/73080397/192313468-077b51d5-3d60-4307-af5b-ac875a5704ea.png)
 
     - vérifier que le fichier à bien été copié : `ls` vous devriez voir le nom du fichier dans la liste.
+    ![fichier_verif](https://user-images.githubusercontent.com/73080397/192396303-50a21e4b-a176-4193-8301-0b58ff8df2f4.png)
+
 - charger le certificat dans un Keystore : mot de passe par défaut du keystore : "changeit"
 ```
 keytool -import -v -trustcacerts -file sni.cloudflaressl.com -alias alphaca -keystore cacerts.jks
