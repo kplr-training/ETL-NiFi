@@ -34,4 +34,5 @@ Pour vérifier votre version de Linux (Centos, Debian ou Amazon Linux):
  ```
 cat /etc/os-release
 ```
+![image](https://user-images.githubusercontent.com/73080397/192309741-21f32f35-434a-407f-ad64-3ac6871a817b.png)
 
