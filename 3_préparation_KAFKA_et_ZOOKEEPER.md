@@ -1,5 +1,5 @@
 # APACHE KAFKA _2.12-2.5.0:
-- trouver le fichier compressé de la version demandée: 
+- trouver le fichier compressé de la version demandée: https://kafka.apache.org/downloads
 - télécharger le fichier kafka_2.13-3.2.3.tgz
 ```
 wget https://archive.apache.org/dist/kafka/3.2.3/kafka_2.13-3.2.3.tgz
