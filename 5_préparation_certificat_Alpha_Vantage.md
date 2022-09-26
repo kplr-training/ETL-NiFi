@@ -1,6 +1,5 @@
 # Préparation du certificat Alpha Vantage:	
 - télécharger le certificat de Alpha Vantage : 
-
     - se rendre sur le site de [Alpha Vantage ](https://www.alphavantage.co/),  remarquer que celui-ci est protégé par le protocole HTTPS
     - cliquer sur le bouton du cadenas "afficher les informations à propoos  du site"
     - la  connexion est sécurisée > certificat valide > détails > exporter le certificat selectionné.
