@@ -18,7 +18,7 @@ cd nifi-1.17.0
     ```
     vi /home/ec2-user/nifi-1.17.0/conf/nifi.properties
     ```
-    - insérer les éléments suivants: (i pour insérer/ :wq pour enregistrer et quitter)
+    - insérer les éléments suivants: (i pour insérer et :wq pour enregistrer et quitter)
     ```
     nifi.web.https.host=0.0.0.0
     nifi.web.https.port=8443
