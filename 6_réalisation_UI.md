@@ -21,7 +21,8 @@ A  la fin de cette étape nous devons obtenir le process groupe de l'image dessu
 - glisser l'icône "process group" vers le milieu de l'écran
 - process group name : AlphaVantage Download
 - double-cliquer dessus, la page du process group à construire apparait
-1. Appeler le service Alpha Vantage.</br>
+
+### 1. Appeler le service Alpha Vantage.</br>
 
 - glisser l'icône "processor" 
 - ajouter le process "GetHTTP"
@@ -35,11 +36,11 @@ Prévoir un écart de 30 secondes entre deux appels. Faut pas oublier que le com
 
 ![Nifi workshop](https://i.ibb.co/4gkR7Qx/Screenshot-2021-02-18-Ni-Fi-Flow-02.png)
 
-2. Mettre à jour le nom du fichier en sortie avec un nom unique basé sur le current time :
+### 2. Mettre à jour le nom du fichier en sortie avec un nom unique basé sur le current time :
 
 ![Nifi workshop](https://i.ibb.co/vwJkJq3/Screenshot-2021-02-18-Ni-Fi-Flow-03.png)
 
-3. Stocker les fichiers csv dans le dossier de sortie :
+### 3. Stocker les fichiers csv dans le dossier de sortie :
 
 ![Nifi workshop](https://i.ibb.co/tcjxJRz/Screenshot-2021-02-18-Ni-Fi-Flow-04.png)
 
