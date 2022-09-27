@@ -22,6 +22,7 @@ readlink -f $(which java)
     PATH = $JAVA_HOME/bin:$PATH
     Export PATH
     ```
+    - enregistrer et quitter le fichier
 - vérifier l'installation de java :
 ```
 java -version
