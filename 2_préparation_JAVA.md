@@ -10,7 +10,7 @@ sudo amazon-linux-extras install java-openjdk11
 readlink -f $(which java)
 ```
 - définir la variable d'environnement JAVA_HOME dans le fichier .bashrc
-    - ouvrir le fichier .bashrc :
+    - se rendre dans root et ouvrir le fichier .bashrc :
     ```
     sudo su
     nano .bashrc
