@@ -31,3 +31,7 @@ java -version
 ```
 echo $JAVA_HOME
 ```
+- revenir vers ec2-user
+```
+exit
+```
