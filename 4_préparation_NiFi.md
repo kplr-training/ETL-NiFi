@@ -7,7 +7,7 @@ wget https://dlcdn.apache.org/nifi/1.17.0/nifi-1.17.0-bin.zip
 ```
 - dézipper le fichier
 ```
-tar -xvf nifi-1.17.0-bin.zip
+unzip -q nifi-1.17.0-bin.zip
 ```
 - se rendre dans le  repertoire nifi-1.17.0
 ```
