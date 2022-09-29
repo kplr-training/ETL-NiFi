@@ -29,6 +29,7 @@ java -version
 ```
 - vérifier la variable JAVA_HOME:
 ```
+source .bash
 echo $JAVA_HOME
 ```
 - revenir vers ec2-user
