@@ -15,7 +15,7 @@ readlink -f $(which java)
     sudo su
     nano .bashrc
     ```
-    - insérer les lignes suivantes :
+    - insérer les lignes suivantes (mettez votre propre chemin de java) :
     ```
     #définir la variable d'environnement de java
     export JAVA_HOME = "/usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64/jre "
