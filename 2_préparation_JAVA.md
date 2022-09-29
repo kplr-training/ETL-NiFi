@@ -18,7 +18,7 @@ readlink -f $(which java)
     - insérer les lignes suivantes (mettez votre propre chemin de java) :
     ```
     #définir la variable d'environnement de java
-    export JAVA_HOME = "/usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64/jre "
+    export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64/jre "
     PATH=$JAVA_HOME/bin:$PATH
     Export PATH
     ```
