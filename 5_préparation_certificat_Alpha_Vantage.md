@@ -12,14 +12,19 @@
     - se rendre sur windows cmd/ macOS terminal
     - se rendre sur le repertoire où vous avez mis le certificat par exemple `cd downloads`
     - copier en utilisant la commande scp `scp -i [clé de connexion] [chemin source] [chemin destination]`
-    - par exemple : ```scp -i NIFI-2022.pem alphavantage.co.cer ec2-user@ec2-15-236-215-61.eu-west-3.compute.amazonaws.com:/home/ec2-user ```
-    
-    ![image](https://user-images.githubusercontent.com/73080397/192313468-077b51d5-3d60-4307-af5b-ac875a5704ea.png)
+    - par exemple : ``` scp -i ZINEB.pem sni.cloudflaressl.com  ec2-user@ec2-54-236-10-45.compute-1.amazonaws.com:/home/ec2-user ```
 
+![a](https://user-images.githubusercontent.com/78825764/193145221-90810c07-a725-4542-8d80-cdbcf7e71141.PNG)
+
+
+    
     - vérifier que le fichier à bien été copié : `ls` vous devriez voir le nom du fichier dans la liste.
-    ![fichier_verif](https://user-images.githubusercontent.com/73080397/192396303-50a21e4b-a176-4193-8301-0b58ff8df2f4.png)
+   
+   ![sni](https://user-images.githubusercontent.com/78825764/193144905-ec197fe5-05b0-4ad3-9f0b-781b7db89e71.PNG)
+
 
 - charger le certificat dans un Keystore : mot de passe par défaut du keystore : "changeit"
 ```
 keytool -import -v -trustcacerts -file sni.cloudflaressl.com -alias alphaca -keystore cacerts.jks
 ```
+
