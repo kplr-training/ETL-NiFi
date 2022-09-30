@@ -32,6 +32,9 @@
 - Maintenant on va travailler sur le Process Groupe AlphaVantage Download , accédez au process group avec un double clique .
 
 ![p](https://user-images.githubusercontent.com/78825764/193159163-7456956c-e1f9-40c4-9e5b-5f7698cfea60.PNG)
+- Ajouter le Truststore filename /home/ec2-user/cacerts.jks 
+
+- Entrez le password changeit dans le Truststore Password 
 
 -Ensuite on va glisser l'icone de processor 
 
@@ -110,4 +113,8 @@
 
 ![F](https://user-images.githubusercontent.com/78825764/193225694-63f370de-8023-4ad0-a68f-d8fc7f1499fd.png)
 
+- Ajouter le Truststore Filename /home/ec2-user/cacerts.jks
+- Ajouter le Truststore Password changeit 
+![F](https://user-images.githubusercontent.com/78825764/193227831-105915ce-cc31-4c35-b2fe-fbbacba48f72.png)
 
+![F](https://user-images.githubusercontent.com/78825764/193228993-dfc8f1ee-31bc-407e-9b28-5a9dcba3ab21.png)
