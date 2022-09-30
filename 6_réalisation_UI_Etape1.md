@@ -118,3 +118,70 @@
 ![F](https://user-images.githubusercontent.com/78825764/193227831-105915ce-cc31-4c35-b2fe-fbbacba48f72.png)
 
 ![F](https://user-images.githubusercontent.com/78825764/193228993-dfc8f1ee-31bc-407e-9b28-5a9dcba3ab21.png)
+- De la meme facon on va créer un autre process GetHTTP : IBM Stock
+On va juste changer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=1min&apikey=YOURAPIKEY&datatype=csv et le Truststore Filename intraday_5min_IBM.csv
+
+![F](https://user-images.githubusercontent.com/78825764/193233997-d64b2b4b-0777-4985-8441-bbb39ee679f6.png)
+
+- Ensuite on va créer un autre process UpdateAttribute
+![F](https://user-images.githubusercontent.com/78825764/193234534-3d1af3d5-5356-45cf-b1b4-65e578c602bd.png)
+![F](https://user-images.githubusercontent.com/78825764/193234649-c6939729-2765-432a-84d4-cf4b3b2d7f50.png)
+- Cliquez sur ADD
+
+- Double Clique sur UpdateAttribute pour configurer 
+
+![F](https://user-images.githubusercontent.com/78825764/193237554-c5057f47-f2a4-42cd-ba8a-01c40a10c392.png)
+
+![F](https://user-images.githubusercontent.com/78825764/193237913-6634e3de-93a4-4f9b-8ef0-88258c089b21.png)
+
+on va ajouter un filename 
+
+
+ -${filename:substringBeforeLast('.csv')}_${now():toNumber()}${literal('.csv')})
+
+![F](https://user-images.githubusercontent.com/78825764/193238345-c5d02d00-cd31-4926-8332-4b5de975c351.png)
+- Maintenant on va ajouter des relations entre GetHTTP :IBM Stock et UpdateAttributs et aussi entre GetHTTP : Apple Stock et UpdateAttributs
+![F](https://user-images.githubusercontent.com/78825764/193239963-202238ce-dfbb-4cd1-a998-a87ee118251c.png)
+
+Appuyez sur ADD
+
+![image](https://user-images.githubusercontent.com/78825764/193240172-49c059e5-6722-4e84-a682-5a06d9815c48.png)
+
+- Maintenant on va ajouter un autre process PutFile
+
+![F](https://user-images.githubusercontent.com/78825764/193240631-128f83b3-63f5-463a-b5b8-45be9949dfc0.png)
+
+- Double clique sur Process Putfile > Directory et ajouter /home/ec2-user/data/input
+
+![F](https://user-images.githubusercontent.com/78825764/193241307-f42d2615-0005-4f8c-9860-5dfb4f754b43.png)
+
+Click sur OK
+
+Allez à RELATIONSHIPS
+
+![F](https://user-images.githubusercontent.com/78825764/193241720-67b62598-ad3d-47f1-8c0c-3e507b3a4398.png)
+
+Click sur OK> APPLY
+
+- Ajoutez une relation entre UpdateAttribute et PutFile
+
+![F](https://user-images.githubusercontent.com/78825764/193242355-0a0144f2-33eb-4181-8ba7-8e10f662262a.png)
+
+- Ajoutez un autre process LogMessage
+
+![F](https://user-images.githubusercontent.com/78825764/193242745-967dde53-ebc1-471d-b902-8931f0fa1650.png)
+
+- Créer une connexion entre PutFile et LogMessage
+
+![F](https://user-images.githubusercontent.com/78825764/193243647-2627373e-d295-43fd-a25a-b65fd980dd96.png)
+
+
+![F](https://user-images.githubusercontent.com/78825764/193243906-be77171a-4b31-49ac-971b-d89848035746.png)
+
+- Commencer GetHTTP: IBM Stock et GetHTTP : Apple Stock(Boutton droit > Start)
+
+![F](https://user-images.githubusercontent.com/78825764/193244807-0fd2c530-b153-4986-83c4-543332c44558.png)
+
+Apprès il faut Arreter les deux process pour ne pas epuiser votre API 
+
+
