@@ -29,4 +29,39 @@
 
 ![process](https://user-images.githubusercontent.com/78825764/193156594-d4cfa7cd-a5fb-48b1-9735-e3cd128a266e.PNG)
 
--Maintenant on va travailler sur le Process Groupe AlphaVantage Download , accédez au process group avec un double clique . 
+- Maintenant on va travailler sur le Process Groupe AlphaVantage Download , accédez au process group avec un double clique .
+
+![p](https://user-images.githubusercontent.com/78825764/193159163-7456956c-e1f9-40c4-9e5b-5f7698cfea60.PNG)
+
+-Ensuite on va glisser l'icone de processor 
+
+
+![b](https://user-images.githubusercontent.com/78825764/193159262-452364ad-5ba5-4667-a881-cf14bee04724.png)
+
+-et on va créer le premier prossecor nommé Getthttp : Apple Stock
+
+![addproc](https://user-images.githubusercontent.com/78825764/193159722-154b95e1-5aef-4853-af32-28c80fea1f32.PNG)
+
+  -Filtrez en entrant GetHttp
+  
+  ![F](https://user-images.githubusercontent.com/78825764/193159995-fb9b8ac9-36a3-47b7-b5c0-9d8b5bb595f5.png)
+    
+ puis cliquez sur le bouton add
+
+
+
+![GetHTTP](https://user-images.githubusercontent.com/78825764/193209167-4b3a769c-12d3-4a2d-a1b8-7eec98cdfbca.PNG)
+ 
+ -Ensuite nous allons réalisé quelques configurations en faisant double clique le processor GetHTTP 
+ 
+        
+  - Vous pouvez renomer votre processor en GetHTTP: IBM Stock en cliquant sur settings
+ 
+
+
+
+![z](https://user-images.githubusercontent.com/78825764/193210264-7d894d2a-afeb-427c-bd36-1365cc40525b.PNG)
+
+  - Ensuite , cliquez sur properties
+  
+  ![pro](https://user-images.githubusercontent.com/78825764/193211015-aef65fa6-6263-4d95-850c-82a2b581e4b1.PNG)
