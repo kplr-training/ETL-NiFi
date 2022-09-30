@@ -65,3 +65,29 @@
   - Ensuite , cliquez sur properties
   
   ![pro](https://user-images.githubusercontent.com/78825764/193211015-aef65fa6-6263-4d95-850c-82a2b581e4b1.PNG)
+  
+  ![p](https://user-images.githubusercontent.com/78825764/193217500-8fc0cfb8-4659-4653-9940-651a84974b75.PNG)
+
+  - On va chercher notre URL pour pouvoir accéder au données de AlghaVantage .Allez sur https://www.alphavantage.co/ et Appuyez sur GET YOUR FREE API KEY FOR FREE
+  - Entrez vos données et appuyez sur GET FREE API KEY et vous allez avoir votre API KEY
+     
+![API](https://user-images.githubusercontent.com/78825764/193216923-e11b27d0-7776-4b8b-9220-c7573484c878.PNG)
+  - Maintenant que you avez votre API on va entrer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=YOURAOIKEY&datatype=csv  et le filename intraday_5min_AAPL.csv
+  
+  ![F](https://user-images.githubusercontent.com/78825764/193219225-22b86fad-ebda-47cf-a017-e7cee90e2ed5.png)
+
+  - Ensuite appuyez sur SSL Context Service > Create new service > Compatible Controller Services >StandardSSLContextService 1.17.0 > create
+   
+  
+  
+  ![F](https://user-images.githubusercontent.com/78825764/193219872-f93ceaf9-8da9-469b-bf03-432bf080930d.png)
+  
+
+![F](https://user-images.githubusercontent.com/78825764/193220732-7bf0b551-4d37-4d08-a35e-42a033027401.png)
+
+
+![F](https://user-images.githubusercontent.com/78825764/193221722-7db7bd8a-62f9-4b28-ba75-6ae2edc1ee2c.png)
+
+
+
+
