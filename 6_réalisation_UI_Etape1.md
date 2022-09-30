@@ -88,6 +88,26 @@
 
 ![F](https://user-images.githubusercontent.com/78825764/193221722-7db7bd8a-62f9-4b28-ba75-6ae2edc1ee2c.png)
 
+- Cliquez sur la flèche 
 
+
+
+![F](https://user-images.githubusercontent.com/78825764/193222554-4e0832ae-d38f-4ad3-9c00-e689a9cd8fbd.png)
+
+- Cliquez sur Yes
+
+
+![F](https://user-images.githubusercontent.com/78825764/193222725-2399018b-c7a1-479a-83b2-daf188b4e588.png)
+
+- Cliquez sur l'icone de paramètre 
+
+
+![F](https://user-images.githubusercontent.com/78825764/193223530-b779f5db-592e-47c4-96d8-02d80917ad7b.png)
+
+![F](https://user-images.githubusercontent.com/78825764/193225234-8acbfe0c-5dd1-40b6-88f5-8d6f20bff3e8.png)
+
+- Modifiez le paramètre Truststore type no value > LKS
+
+![F](https://user-images.githubusercontent.com/78825764/193225694-63f370de-8023-4ad0-a68f-d8fc7f1499fd.png)
 
 
