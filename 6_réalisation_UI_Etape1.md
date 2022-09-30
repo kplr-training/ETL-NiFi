@@ -118,6 +118,11 @@
 ![F](https://user-images.githubusercontent.com/78825764/193227831-105915ce-cc31-4c35-b2fe-fbbacba48f72.png)
 
 ![F](https://user-images.githubusercontent.com/78825764/193228993-dfc8f1ee-31bc-407e-9b28-5a9dcba3ab21.png)
+- Ajouter 10 secondes au Run Scheduler Go to Scheduling
+
+
+![F](https://user-images.githubusercontent.com/78825764/193268695-7033581d-a4a5-4fea-a4bc-ee602573f535.png)
+
 - De la meme facon on va créer un autre process GetHTTP : IBM Stock
 On va juste changer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=1min&apikey=YOURAPIKEY&datatype=csv et le Truststore Filename intraday_5min_IBM.csv
 
@@ -151,37 +156,66 @@ Appuyez sur ADD
 
 ![F](https://user-images.githubusercontent.com/78825764/193240631-128f83b3-63f5-463a-b5b8-45be9949dfc0.png)
 
+- Double clique sur Process Putfile > Settings et renommer le process en PutFile:input folder
+
+
+![F](https://user-images.githubusercontent.com/78825764/193293009-85a12551-ad50-4ee5-ac69-76efbfd98324.png)
+
 - Double clique sur Process Putfile > Directory et ajouter /home/ec2-user/data/input
 
-![F](https://user-images.githubusercontent.com/78825764/193241307-f42d2615-0005-4f8c-9860-5dfb4f754b43.png)
 
-Click sur OK
+![F](https://user-images.githubusercontent.com/78825764/193280880-38a469fe-aacd-47cf-bdc8-6884d92893c8.png)
+Click sur OK> APPLY
 
 Allez à RELATIONSHIPS
 
 ![F](https://user-images.githubusercontent.com/78825764/193241720-67b62598-ad3d-47f1-8c0c-3e507b3a4398.png)
 
-Click sur OK> APPLY
+Click sur OK
 
-- Ajoutez une relation entre UpdateAttribute et PutFile
+- On va créer un autre Process PutFile:history folder
+    1-On va copier le PutFile:input folder(clique droit > copier)
+    
+    ![F](https://user-images.githubusercontent.com/78825764/193293681-1bccf2ae-d5bb-4416-9637-5c37d05296de.png)
+    
+    2-On va coller dans notre graphe
+    
+    3-On renomme ce nouveau process en PutFile: History folder
+    
 
-![F](https://user-images.githubusercontent.com/78825764/193242355-0a0144f2-33eb-4181-8ba7-8e10f662262a.png)
+![F](https://user-images.githubusercontent.com/78825764/193295138-a66074f0-c71b-485a-8db3-e29a6720aea6.png)
+
+- Allez au terminal et entrer cette commande 
+```
+sudo cp /home/ec2-user/data/history/* /home/ec2-user/data/input
+```
+
+- Ajoutez deux relation entre UpdateAttribute et les deux PutFile
+
+![F](https://user-images.githubusercontent.com/78825764/193296025-c8cf6f9f-2754-49a9-91fb-fbcaf3a2930d.png)
 
 - Ajoutez un autre process LogMessage
 
 ![F](https://user-images.githubusercontent.com/78825764/193242745-967dde53-ebc1-471d-b902-8931f0fa1650.png)
+ 
+- Double click sur le process LogMessage > Relationships>cocher terminated
+![F](https://user-images.githubusercontent.com/78825764/193298572-073f0c2f-a441-4415-9aa1-416122233051.png)
 
-- Créer une connexion entre PutFile et LogMessage
 
-![F](https://user-images.githubusercontent.com/78825764/193243647-2627373e-d295-43fd-a25a-b65fd980dd96.png)
+
+- Créer deux entre les deux PutFile et LogMessage
+
+
+![F](https://user-images.githubusercontent.com/78825764/193299448-5aa6eb79-d71c-47e7-982d-9b2736e2d3e7.png)
 
 
 ![F](https://user-images.githubusercontent.com/78825764/193243906-be77171a-4b31-49ac-971b-d89848035746.png)
 
-- Commencer GetHTTP: IBM Stock et GetHTTP : Apple Stock(Boutton droit > Start)
+- Commencer les process en commencant par le LogMessage (Bouton droit >start ) jusqu'au gethttp process
 
-![F](https://user-images.githubusercontent.com/78825764/193244807-0fd2c530-b153-4986-83c4-543332c44558.png)
 
-Apprès il faut Arreter les deux process pour ne pas epuiser votre API 
+![F](https://user-images.githubusercontent.com/78825764/193300186-3772bbc9-c249-4c9f-a2cf-9eeac711fc12.png)
+
+Après il faut Arreter le process GetHTTP pour ne pas epuiser votre API 
 
 
