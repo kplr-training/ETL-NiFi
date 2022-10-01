@@ -9,13 +9,36 @@
 # Réalisation UI 1ère Etape:	
 - Connecter vous à l'interface graphique de NiFi. Allez sur :
 
-   https://ipadresse:port/nifi
+   https://ipadresse:8483/nifi
+   
+   - par exemple : https://56.236.10.45:8443/nifi
    
 -Vous serez dirigé vers la page de Login de NiFi:
 
 ![nifi](https://user-images.githubusercontent.com/78825764/193147697-1b9ee848-c8c9-42da-88b6-98e83ab4e6e4.PNG)
 
-  Entrer votre nom d'utilisateur et mot de passe
+Entrer votre nom d'utilisateur et mot de passe
+     
+- Vous pouvez trouver votre mot de passe et votre nom de l'utilisateur générer par NiFi à l'aide de cette commande:
+      
+ ```console
+ cat /home/ec2-user/nifi-1.17.0/logs/nifi-app_*.log | grep Generated
+ ```
+  
+!!Attention!! : 
+     En cas d'erreur de token au moment du login, il faut redémarrer nifi pour des raisons de sécurité
+    
+![F](https://user-images.githubusercontent.com/78825764/193429384-88919907-4750-448c-93ec-be637973ad73.png)
+  
+Pour résoudre ce problème , tapez ces deux commandes pour redémarer NiFi :
+     
+```console
+    sudo bin/nifi.sh stop
+    sudo bin/nifi.sh start
+```
+  
+
+  
 
 - Une fois connecté à votre interface vous devez créer 3 différents process group
 
@@ -32,9 +55,6 @@
 - Maintenant on va travailler sur le Process Groupe AlphaVantage Download , accédez au process group avec un double clique .
 
 ![p](https://user-images.githubusercontent.com/78825764/193159163-7456956c-e1f9-40c4-9e5b-5f7698cfea60.PNG)
-- Ajouter le Truststore filename /home/ec2-user/cacerts.jks 
-
-- Entrez le password changeit dans le Truststore Password 
 
 -Ensuite on va glisser l'icone de processor 
 
@@ -75,7 +95,12 @@
   - Entrez vos données et appuyez sur GET FREE API KEY et vous allez avoir votre API KEY
      
 ![API](https://user-images.githubusercontent.com/78825764/193216923-e11b27d0-7776-4b8b-9220-c7573484c878.PNG)
-  - Maintenant que you avez votre API on va entrer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=YOURAOIKEY&datatype=csv  et le filename intraday_5min_AAPL.csv
+
+  - Copier l'API 
+  
+  - Maintenant que you avez votre API on va entrer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=VOTREAPI&datatype=csv en modifiant VOTREAPI par l'API que vous avez copier 
+  
+  - Ensuite entrez intraday_5min_AAPL.csv dans le champ filename 
   
   ![F](https://user-images.githubusercontent.com/78825764/193219225-22b86fad-ebda-47cf-a017-e7cee90e2ed5.png)
 
