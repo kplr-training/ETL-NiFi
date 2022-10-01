@@ -1,4 +1,4 @@
-# Nous allons découper le traitement en trois lots :
+# Nous allons fractionner le traitement en trois lots :
 
   1-Récupération des données Alpha Vantage.
   
@@ -7,19 +7,19 @@
   3-Récupération des données et stockage dans une base de données MongoDB.
   
 # Réalisation UI 1ère Etape:	
-- Connecter vous à l'interface graphique de NiFi. Allez sur :
+- Connectez vous à l'interface graphique de NiFi. Allez sur :
 
    https://ipadresse:8483/nifi
    
    - par exemple : https://56.236.10.45:8443/nifi
    
--Vous serez dirigé vers la page de Login de NiFi:
+-Vous serez redirigé vers la page de Login de NiFi:
 
 ![nifi](https://user-images.githubusercontent.com/78825764/193147697-1b9ee848-c8c9-42da-88b6-98e83ab4e6e4.PNG)
 
 Entrer votre nom d'utilisateur et mot de passe
      
-- Vous pouvez trouver votre mot de passe et votre nom de l'utilisateur générer par NiFi à l'aide de cette commande:
+- Vous trouvez votre mot de passe et votre nom de l'utilisateur générer par NiFi à l'aide de cette commande:
       
  ```console
  cat /home/ec2-user/nifi-1.17.0/logs/nifi-app_*.log | grep Generated
@@ -241,6 +241,6 @@ sudo cp /home/ec2-user/data/history/* /home/ec2-user/data/input
 
 ![F](https://user-images.githubusercontent.com/78825764/193300186-3772bbc9-c249-4c9f-a2cf-9eeac711fc12.png)
 
-Après il faut Arreter le process GetHTTP pour ne pas epuiser votre API 
+Après il faut Arrêter le process GetHTTP pour ne pas épuiser votre API 
 
 
