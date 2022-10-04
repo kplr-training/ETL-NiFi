@@ -9,7 +9,7 @@
 # Réalisation UI 1ère Etape:	
 - Connectez vous à l'interface graphique de NiFi. Allez sur :
 
-   https://ipadresse:8483/nifi
+   https://ipadresse:8443/nifi
    
    - par exemple : https://56.236.10.45:8443/nifi
    
