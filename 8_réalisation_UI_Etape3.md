@@ -63,3 +63,28 @@
 - Copier et coller le process Log message 
 
 - Ajoutez un autre process PutMongo
+
+- Double cliquez sur PutMongo
+
+- Copier et coller votre Mongo URI
+
+![image](https://user-images.githubusercontent.com/78825764/194067859-1877eebe-6e1e-477b-bd4f-9716e014744b.png)
+
+![image](https://user-images.githubusercontent.com/78825764/194067517-beff90aa-692c-4863-b10d-9c63a77b066e.png)
+ 
+ - Ajoutez le nom ainsi que la collection de votre MongoDB
+ 
+ ![image](https://user-images.githubusercontent.com/78825764/194068484-942da905-afdc-42cb-a8a0-542e64ecada4.png)
+
+- Cliquez sur APPLY
+
+- Ajoutez deux output et des relations entre vos process comme suit :
+
+![image](https://user-images.githubusercontent.com/78825764/194069083-4dad281b-e766-483d-b7f2-c78167bec1de.png)
+
+- Exécutez votre flow
+
+- Allez à votre MongoDB et rafraîchissez
+
+- Vous devez visualiser vos données sur MongoDB
+
