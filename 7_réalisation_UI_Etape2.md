@@ -115,7 +115,7 @@
 ![image](https://user-images.githubusercontent.com/78825764/194056210-17c1fafa-c9ce-4783-9b1d-616a386bd234.png)
 
 - Exécutez les 3 process
-- Vous pouvez visualiser les données transmise en revenant au terminal et taper cette commande
+- Vous pouvez visualiser les données transmises en revenant au terminal et taper cette commande
 ```
 /home/ec2-user/kafka_2.13-3.2.3/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic IBM --from-beginning
 ```
