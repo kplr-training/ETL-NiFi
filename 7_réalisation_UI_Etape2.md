@@ -1,7 +1,7 @@
 ### Maintenant on passe à l'étape 2 : Push To Kafka
 ---
 
-- Double cliquez sur le flow PushToKafka
+- Double cliquez sur le process groupe PushToKafka
 - Ajoutez un nouveau Processor GetFile
 
 ![getfile](https://user-images.githubusercontent.com/78825764/194045587-5c8971fb-7a73-4fc2-9a7e-c8b130ff1c15.PNG)
