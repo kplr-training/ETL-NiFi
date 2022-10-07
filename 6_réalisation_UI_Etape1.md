@@ -234,7 +234,6 @@ sudo cp /home/ec2-user/data/history/* /home/ec2-user/data/input
 ![F](https://user-images.githubusercontent.com/78825764/193299448-5aa6eb79-d71c-47e7-982d-9b2736e2d3e7.png)
 
 
-![F](https://user-images.githubusercontent.com/78825764/193243906-be77171a-4b31-49ac-971b-d89848035746.png)
 
 - Commencer les process en commencant par le LogMessage (Bouton droit >start ) jusqu'au gethttp process
 
