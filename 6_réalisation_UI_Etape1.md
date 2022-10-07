@@ -199,6 +199,7 @@ Allez à RELATIONSHIPS
 Click sur OK
 
 - On va créer un autre Process PutFile:history folder
+
     1-On va copier le PutFile:input folder(clique droit > copier)
     
     ![F](https://user-images.githubusercontent.com/78825764/193293681-1bccf2ae-d5bb-4416-9637-5c37d05296de.png)
@@ -208,7 +209,14 @@ Click sur OK
     3-On renomme ce nouveau process en PutFile: History folder
     
 
-![F](https://user-images.githubusercontent.com/78825764/193295138-a66074f0-c71b-485a-8db3-e29a6720aea6.png)
+    ![F](https://user-images.githubusercontent.com/78825764/193295138-a66074f0-c71b-485a-8db3-e29a6720aea6.png)
+    
+    4-On change le directory en /home/ec2-user/data/history
+    
+    ![image](https://user-images.githubusercontent.com/78825764/194528724-d2d23fa5-ab3f-4165-9184-2958fc881696.png)
+
+    
+    
 
 - Allez au terminal et entrer cette commande 
 ```
