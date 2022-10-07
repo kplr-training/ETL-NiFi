@@ -78,7 +78,13 @@
 ```
 ![k](https://user-images.githubusercontent.com/78825764/194051529-6750134f-80cb-44e3-8b92-1d02f5270d17.PNG)
 
+- Modifier Treat First Line as Header > True
+
+![image](https://user-images.githubusercontent.com/78825764/194537404-fde0419c-d457-4f8f-85fe-0768d483d15e.png)
+
+
 - Cliquez sur OK
+
 
 ![k](https://user-images.githubusercontent.com/78825764/194051818-3c5911a9-645c-40d1-bc63-5997d43d5f8a.PNG)
 
