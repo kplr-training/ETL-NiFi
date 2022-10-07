@@ -26,7 +26,7 @@
 
 - Double cliquez sur UpdateAttribute
 
-- Ajoutez ${filename:substringBeforeLast("_"):substringAfterLast("_")} au topic
+- Ajoutez ![image](https://user-images.githubusercontent.com/78825764/194535026-f1da6322-5f24-4cc0-b7d2-99cd8572bda6.png) au topic
 
 ![k](https://user-images.githubusercontent.com/78825764/194048199-910cad00-a088-4482-9bed-453a53e9a3a5.PNG)
 
